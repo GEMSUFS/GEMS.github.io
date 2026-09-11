@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página não encontrada · GEMS</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0F3B24">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..600&display=swap">
+  <link rel="stylesheet" href="assets/css/portal.css">
+
+  <script>
+    try { var t = localStorage.getItem("gems-tema"); if (t === "claro" || t === "escuro") document.documentElement.setAttribute("data-tema", t); } catch (e) {}
+    window.addEventListener("error", function (e) {
+      var alvo = e.target && e.target.src;
+      if (alvo && /conteudo\.js/.test(alvo)) window.__erroConteudo = { faltando: true };
+      else if (e.filename && /conteudo\.js/.test(e.filename)) window.__erroConteudo = { linha: e.lineno, msg: e.message };
+    }, true);
+  </script>
+</head>
+<body data-pagina="404">
+  <div id="topo"></div>
+  <main id="conteudo" tabindex="-1">
+    <noscript><div class="container"><p class="aviso-erro">Página não encontrada. <a href="index.html">Voltar ao início</a>.</p></div></noscript>
+  </main>
+  <div id="fim"></div>
+
+  <script src="conteudo.js"></script>
+  <script src="assets/js/portal.js"></script>
+</body>
+</html>
