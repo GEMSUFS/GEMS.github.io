@@ -20,7 +20,7 @@
 
    CUIDADO COM A PONTUAÇÃO — o arquivo é JavaScript:
      • todo texto fica entre aspas "assim";
-     • se o texto tiver aspas, use as curvas “assim” ou escreva \"assim\";
+     • se o texto tiver aspas, use as curvas “assim”;
      • os itens são separados por vírgula.
    Se algo quebrar, o próprio site avisa no lugar das notícias (no site
    publicado, com o número da linha). É só abrir este arquivo e corrigir.
@@ -33,23 +33,23 @@ window.GEMS = {
      --------------------------------------------------------------------- */
   site: {
     sigla: "GEMS",
-    nome: "Grupo de Estudo em Melhoramento Vegetal do Semiárido",
-    instituicao: "Universidade Federal de Sergipe",
+    nome: "Grupo de Estudos em Melhoramento Vegetal do Semiárido",
+    instituicao: "Universidade Federal de Sergipe · Campus do Sertão",
     instituicaoSigla: "UFS",
     slogan: "Portal de notícias",
-    chamada: "Melhoramento vegetal feito por estudantes, do campo ao código",   // título do bloco "O grupo"
+    chamada: "Ciência, campo e inovação para a agricultura do Semiárido",   // título do bloco "O grupo"
     sobre: [
-      "O GEMS — Grupo de Estudo em Melhoramento Vegetal do Semiárido — reúne estudantes da Universidade Federal de Sergipe em torno do melhoramento genético de plantas.",
-      "O grupo conduz programas de seleção recorrente em milho, mantém um banco ativo de germoplasma e desenvolve as próprias ferramentas digitais, como o SEEDS, sistema que organiza todo o programa de melhoramento."
+      "O GEMS — Grupo de Estudos em Melhoramento Vegetal do Semiárido — reúne estudantes de graduação, mestrado e doutorado da Universidade Federal de Sergipe, no Campus do Sertão, em torno do melhoramento genético de plantas, com foco na cultura do milho.",
+      "O grupo atua em iniciação científica, iniciação tecnológica e ações de extensão, conduz programas de seleção recorrente, mantém um banco ativo de germoplasma e desenvolve as próprias ferramentas digitais, como o SEEDS. A coordenação é do Prof. Dr. Gustavo Hugo Ferreira de Oliveira."
     ]
   },
 
   contato: {
     email: "gems@academico.ufs.br",
-    instagram: "",   // ex.: "https://www.instagram.com/usuario_do_grupo"  (vazio = não aparece)
-    youtube: "",     // ex.: "https://www.youtube.com/@canal"               (vazio = não aparece)
-    github: "",      // ex.: "https://github.com/usuario"                   (vazio = não aparece)
-    endereco: "Universidade Federal de Sergipe"
+    instagram: "https://www.instagram.com/gems_ufsser/",
+    youtube: "",     // ex.: "https://www.youtube.com/@canal"   (vazio = não aparece)
+    github: "",      // ex.: "https://github.com/gemsufs"       (vazio = não aparece)
+    endereco: "Fazenda Experimental da UFS – Campus do Sertão, Pov. Mesinhas"
   },
 
   /* ---------------------------------------------------------------------
@@ -58,7 +58,7 @@ window.GEMS = {
      "cor" é a cor do rótulo e da capa gerada automaticamente.
      --------------------------------------------------------------------- */
   categorias: [
-    { id: "pesquisa",    nome: "Pesquisa",    cor: "#2F7542", descricao: "Ensaios, análises e resultados do programa de melhoramento." },
+    { id: "pesquisa",    nome: "Pesquisa",    cor: "#2F7542", descricao: "Ensaios, análises e resultados das pesquisas do grupo." },
     { id: "campo",       nome: "Campo",       cor: "#5A7A1E", descricao: "Semeadura, polinização, avaliações e colheita na área experimental." },
     { id: "germoplasma", nome: "Germoplasma", cor: "#9A6412", descricao: "Banco ativo de germoplasma, lotes de sementes e conservação." },
     { id: "tecnologia",  nome: "Tecnologia",  cor: "#235C94", descricao: "O SEEDS, automação e as ferramentas digitais do grupo." },
@@ -72,46 +72,192 @@ window.GEMS = {
        imagem           -> foto de capa (opcional). Coloque o arquivo na
                            pasta "imagens" e escreva "imagens/nome.jpg".
                            Sem foto, o site desenha uma capa com a cor da seção.
+       enquadramento    -> "topo", "centro" (padrão) ou "baixo": que parte da
+                           foto aparece nos cartões. Em cartazes, use "topo".
        video            -> link do YouTube (opcional), aparece no topo da notícia
      --------------------------------------------------------------------- */
   noticias: [
 
     {
-      id: "seeds-3-5",
-      titulo: "SEEDS 3.5: o programa de melhoramento do GEMS inteiro em um só sistema",
-      linhaFina: "Desenvolvida dentro do grupo, a plataforma reúne programas, ciclos de seleção, cruzamentos, progênies, ensaios e pedigree — e agora roda em qualquer computador do laboratório.",
-      categoria: "tecnologia",
-      data: "2026-09-08",
-      autor: "Departamento de Tecnologia",
+      id: "dia-de-campo-2026",
+      titulo: "Dia de Campo GEMS abre a Fazenda Experimental em 18 de setembro",
+      linhaFina: "Manhã de troca de conhecimento no Campus do Sertão, com os experimentos do grupo abertos à visitação, das 8h30 às 11h30.",
+      categoria: "eventos",
+      data: "2026-09-12",
+      autor: "Departamento de Mídia",
       destaque: true,
+      imagem: "imagens/dia-de-campo-2026.jpg",
+      enquadramento: "topo",
+      legenda: "Cartaz de divulgação do Dia de Campo GEMS 2026.",
+      tags: ["Dia de Campo", "extensão", "milho"],
+      texto: [
+        "O GEMS convida agricultores, estudantes e pesquisadores para o **Dia de Campo GEMS**, na sexta-feira, 18 de setembro de 2026, na Fazenda Experimental da UFS – Campus do Sertão, no povoado Mesinhas. O encontro começa às 8h30 e vai até as 11h30.",
+        "“É hora de sair da teoria, colocar o conhecimento em prática e vivenciar a pesquisa diretamente no campo”, diz o convite publicado pelo grupo. O professor Gustavo Oliveira, coordenador do GEMS, também gravou um convite em vídeo.",
+        "## O que você vai encontrar",
+        "- **Pesquisa e experimentação**, com os experimentos conduzidos pelo grupo abertos à visitação;",
+        "- **Conhecimento no campo**, com a equipe explicando cada etapa do trabalho;",
+        "- **Tecnologia e inovação** aplicadas ao melhoramento vegetal.",
+        "> Um encontro para ver a pesquisa acontecendo na prática e trocar experiências sobre os caminhos da agricultura no Semiárido.",
+        "O Dia de Campo tem apoio do Edital 4/2021 CAPES/FAPITEC e reúne o Campus do Sertão, o Departamento de Engenharia Agronômica do Sertão (DEAS), o PPGAGRI-UFS e o grupo Insecta.",
+        "[Veja o convite no Instagram do GEMS](https://www.instagram.com/gems_ufsser/p/DdHRcmWp6A4/)."
+      ]
+    },
+
+    {
+      id: "mencao-honrosa-conagro",
+      titulo: "Estudo sobre uso de nitrogênio em milho recebe menção honrosa em 1º lugar no IV CONAGRO",
+      linhaFina: "Trabalho de Jacilene Francisca Souza Santos avalia progênies de meios-irmãos e combina parâmetros genéticos e análise multivariada para selecionar genótipos adaptados ao semiárido.",
+      categoria: "pesquisa",
+      data: "2026-09-08",
+      autor: "Departamento de Mídia",
+      destaque: true,
+      imagem: "imagens/conagro-jacilene.jpg",
+      enquadramento: "topo",
+      legenda: "Card de divulgação da premiação, publicado pelo Campus do Sertão da UFS.",
+      tags: ["premiação", "nitrogênio", "milho"],
+      texto: [
+        "A pesquisadora **Jacilene Francisca Souza Santos**, discente do PPGAGRI/UFS e integrante do GEMS, conquistou a **menção honrosa em 1º lugar**, na modalidade vídeo-pôster, no IV Congresso Nacional de Agronomia On-line (IV CONAGRO), realizado entre 18 e 20 de junho de 2026.",
+        "O trabalho premiado, “Eficiência do Uso de Nitrogênio em Progênies de Meios-Irmãos de Milho: Parâmetros Genéticos e Análise Multivariada para Seleção de Genótipos Adaptados ao Semiárido”, avalia a eficiência do uso de nitrogênio em milho e busca genótipos que se saiam bem nas condições da região.",
+        "## Por que o nitrogênio",
+        "O nitrogênio é o nutriente que o milho mais exige e um dos insumos mais caros da lavoura. Encontrar materiais que produzam bem com menos nitrogênio disponível é, ao mesmo tempo, uma questão econômica para o agricultor e uma questão ambiental.",
+        "## Quem assina",
+        "Além da autora, assinam o trabalho Barbara Nascimento Santos, Carla Nayara da Silva Lima, Nartênia Susane Costa Aragão, Carlos Emanuel Brito dos Santos, João Pedro da Silva Alves, Camila Lima Santos e Tamara Rebecca Albuquerque de Oliveira, com os professores José Jairo Florentino Cordeiro Junior e Gustavo Hugo Ferreira de Oliveira, orientador.",
+        "A conquista foi celebrada também pela Direção Geral do Campus do Sertão, que destacou a sequência de resultados do grupo em eventos científicos de todo o país."
+      ]
+    },
+
+    {
+      id: "premio-melhor-resumo-barbara",
+      titulo: "Altura de planta medida por drone rende 1º lugar em prêmio de melhor resumo científico",
+      linhaFina: "Trabalho de Barbara Nascimento Santos usa imagens aéreas para apoiar a seleção de genótipos mais produtivos e virou reportagem na TV Sergipe.",
+      categoria: "pesquisa",
+      data: "2026-09-02",
+      autor: "Departamento de Mídia",
+      destaque: true,
+      imagem: "imagens/premio-barbara.jpg",
+      legenda: "A pesquisa do grupo em reportagem do programa Estação Agrícola, da TV Sergipe.",
+      tags: ["premiação", "fenotipagem", "drone"],
+      texto: [
+        "**Barbara Nascimento Santos**, integrante do Programa de Pós-Graduação em Agricultura e Biodiversidade (PPGAGRI) e do GEMS, conquistou o **1º lugar no prêmio de Melhor Resumo Científico** com um trabalho desenvolvido no grupo.",
+        "O estudo mostra que estimativas de altura de planta obtidas por drone melhoram a seleção indireta para produtividade de grãos em milho sob disponibilidade contrastante de nitrogênio. Em outras palavras: uma medida rápida e barata, feita do alto, ajuda a decidir quais materiais avançam no programa de melhoramento.",
+        "## Da parcela para o telejornal",
+        "A repercussão passou do meio acadêmico: o trabalho virou [matéria da UFS](https://share.google/cFHtH4KU3c9exKr9b) e [reportagem na TV Sergipe](https://globoplay.globo.com/v/14914170).",
+        "O resumo está publicado nos anais do XVII Simpósio Internacional de Genética e Melhoramento (SIGM 2026) e pode ser [acessado na íntegra](https://proceedings.science/sigm/sigm-2026/papers/uav-derived-plant-height-estimates-enhance-indirect-selection-for-grain-yield-in?lang=pt-br).",
+        "> É um reconhecimento que valoriza não só a conquista da Bárbara, mas também todo o trabalho e dedicação dos envolvidos na pesquisa."
+      ]
+    },
+
+    {
+      id: "seeds-3o-lugar-seagro",
+      titulo: "SEEDS, o aplicativo do grupo, conquista o 3º lugar no IV SEAGRO",
+      linhaFina: "Trabalho de José Felipe Dantas Lima apresenta o sistema que reúne materiais, cruzamentos, progênies e experimentos em um só ambiente.",
+      categoria: "tecnologia",
+      data: "2026-08-29",
+      autor: "Departamento de Mídia",
+      destaque: false,
+      imagem: "imagens/seagro-seeds.jpg",
+      enquadramento: "topo",
+      legenda: "Card de divulgação da premiação publicado pelo GEMS.",
+      tags: ["SEEDS", "premiação", "inovação"],
+      texto: [
+        "O GEMS foi destaque no **IV SEAGRO – Seminário da Agroprodução e VI Semana de Agronomia**, realizado pelo Instituto Federal de Alagoas (IFAL) – Campus Piranhas, com o tema “Pesquisa, Inovação e Mercado: Novos Caminhos para o Agro no Semiárido”.",
+        "**José Felipe Dantas Lima**, discente de Engenharia Agronômica, conquistou o **3º lugar na categoria Melhor Resumo Científico** com o trabalho “SEEDS: aplicativo para gestão, rastreabilidade e inovação em programas de melhoramento vegetal no semiárido”.",
+        "Desenvolvido pelo próprio grupo, o SEEDS integra em um único ambiente o registro de materiais, cruzamentos, progênies e informações de experimentos, deixando a gestão do programa de melhoramento mais organizada, eficiente e rastreável.",
+        "O trabalho teve orientação do Prof. Dr. Gustavo Oliveira, coordenador do grupo e professor adjunto do Departamento de Engenharia Agronômica do Sertão (DEAS).",
+        "[Conheça o SEEDS por dentro](noticia.html?id=seeds-3-5)."
+      ]
+    },
+
+    {
+      id: "gems-no-iv-seagro",
+      titulo: "GEMS leva 15 resumos científicos ao IV SEAGRO",
+      linhaFina: "Trabalhos passam por seleção de genótipos, diversidade genética, índices de seleção, produtividade, fenotipagem e ferramentas tecnológicas.",
+      categoria: "eventos",
+      data: "2026-08-29",
+      autor: "Departamento de Mídia",
+      destaque: false,
+      imagem: "imagens/seagro-15-resumos.jpg",
+      legenda: "Integrantes do GEMS no IV SEAGRO – Seminário da Agroprodução e VI Semana de Agronomia.",
+      tags: ["SEAGRO", "publicações"],
+      texto: [
+        "O GEMS marcou presença no IV SEAGRO – Seminário da Agroprodução e VI Semana de Agronomia com a submissão de **15 resumos científicos**.",
+        "Os trabalhos abrangem diferentes abordagens dentro da genética e do melhoramento vegetal: seleção de genótipos, diversidade genética, índices de seleção, características morfoagronômicas, produtividade, fenotipagem e o desenvolvimento de ferramentas tecnológicas aplicadas ao melhoramento.",
+        "> Mais do que números, são 15 trabalhos que representam conhecimento, dedicação e ciência.",
+        "A participação reforça o compromisso do grupo com a formação de pesquisadores e com o desenvolvimento de soluções para a agricultura do Semiárido."
+      ]
+    },
+
+    {
+      id: "primeira-tese-doutorado",
+      titulo: "Gabriel Martins defende a primeira tese de doutorado do GEMS",
+      linhaFina: "Pesquisa aplica enviromics e modelagem preditiva ao melhoramento de milho no Semiárido brasileiro.",
+      categoria: "grupo",
+      data: "2026-08-27",
+      autor: "Departamento de Mídia",
+      destaque: false,
+      imagem: "imagens/tese-gabriel-martins.jpg",
+      enquadramento: "topo",
+      legenda: "Banca da defesa de tese de Gabriel Martins, em 4 de julho de 2026.",
+      tags: ["doutorado", "enviromics", "milho"],
+      texto: [
+        "Em 4 de julho de 2026, **Gabriel Martins** defendeu a tese “Enviromics e modelagem preditiva aplicadas ao melhoramento de milho (Zea mays L.) no Semiárido brasileiro”, sob orientação do Prof. Dr. Gustavo Oliveira.",
+        "É a primeira tese de doutorado defendida por um integrante do GEMS — um marco na trajetória de um grupo que nasceu formando estudantes de graduação e hoje também atua no mestrado e no doutorado.",
+        "## O que é enviromics",
+        "A enviromics descreve o ambiente com a mesma sistematicidade com que a genômica descreve o genótipo: clima, solo e manejo viram variáveis que entram nos modelos. Combinada à modelagem preditiva, ajuda a antecipar como cada material se comporta em cada ambiente — pergunta decisiva em uma região tão variável quanto o Semiárido.",
+        "> Que este seja apenas mais um dos muitos capítulos de uma trajetória de sucesso na ciência."
+      ]
+    },
+
+    {
+      id: "nova-identidade-visual",
+      titulo: "A hélice e o grão: o que diz a identidade visual do GEMS",
+      linhaFina: "Espiral inspirada na dupla hélice do DNA, grão de milho estilizado e as cores da agricultura brasileira.",
+      categoria: "grupo",
+      data: "2025-09-22",
+      autor: "Departamento de Mídia",
+      destaque: false,
+      imagem: "imagens/identidade-visual.jpg",
+      legenda: "A marca do GEMS, apresentada em setembro de 2025.",
+      tags: ["identidade visual", "grupo"],
+      texto: [
+        "A identidade visual do GEMS une ciência, inovação e agricultura. O elemento central em espiral, inspirado na **dupla hélice do DNA**, simboliza o avanço da genética no melhoramento de plantas.",
+        "Na base da espiral, o **grão de milho estilizado** destaca o principal foco de atuação do grupo: a cultura do milho. O desenho combina a espiga com formas que lembram folhas, reforçando a conexão entre produtividade e sustentabilidade.",
+        "As cores **verde e amarela** foram escolhidas por representarem a agricultura brasileira, e o degradê entre elas transmite inovação para a agricultura no semiárido, guiada pela ciência e pela tecnologia.",
+        "A nova marca chegou junto com uma mudança de escala: o grupo, especializado no treinamento de estudantes de graduação, ampliou sua atuação para o mestrado e o doutorado, reafirmando o compromisso com a pesquisa, o ensino e a extensão aplicados ao campo."
+      ]
+    },
+
+    {
+      id: "seeds-3-5",
+      titulo: "SEEDS: o programa de melhoramento do GEMS inteiro em um só sistema",
+      linhaFina: "Desenvolvida dentro do grupo, a plataforma reúne programas, ciclos de seleção, cruzamentos, progênies, ensaios e pedigree — e roda em qualquer computador do laboratório.",
+      categoria: "tecnologia",
+      data: "2026-08-20",
+      autor: "Departamento de Tecnologia",
+      destaque: false,
       imagem: "",
       legenda: "",
       tags: ["SEEDS", "software", "rastreabilidade"],
       texto: [
-        "Todo programa de melhoramento produz uma quantidade enorme de informação: de onde veio cada material, quem foi cruzado com quem, qual progênie foi selecionada em qual ciclo, em que parcela ela estava no campo. No GEMS, essas informações agora moram em um só lugar: o **SEEDS**, sistema desenvolvido pelo próprio grupo, que chega à versão 3.5.",
+        "Todo programa de melhoramento produz uma quantidade enorme de informação: de onde veio cada material, quem foi cruzado com quem, qual progênie foi selecionada em qual ciclo, em que parcela ela estava no campo. No GEMS, essas informações moram em um só lugar: o **SEEDS**, sistema desenvolvido pelo próprio grupo.",
         "Com ele é possível cadastrar programas, ciclos de seleção, entradas genéticas, cruzamentos, progênies e experimentos de campo, além de gerar etiquetas, croquis, cadernos de campo e a genealogia completa dos materiais.",
         "## Rastreabilidade de ponta a ponta",
         "O ponto central é o pedigree. Em um programa de seleção recorrente, as progênies selecionadas em um ciclo se tornam os genitores do ciclo seguinte. O SEEDS acompanha essa cadeia geração após geração, de modo que qualquer material pode ser rastreado até as populações de origem.",
         "> Qualquer material pode ser rastreado, geração após geração, até as populações de origem.",
-        "## O que mudou na versão 3.5",
-        "- **Login individual**, com senhas protegidas e bloqueio após tentativas erradas;",
-        "- **Telas que se atualizam sozinhas** quando outra pessoa grava um dado na rede do laboratório;",
-        "- **Interface em português e em inglês**;",
-        "- **Banco de germoplasma** integrado, com o saldo de cada lote de sementes;",
-        "- **Escalas de campo e pontuação** de contribuição dos membros;",
-        "- **Instalador próprio**, que dispensa instalar o R ou ter acesso de administrador.",
-        "Cada uma dessas novidades tem uma reportagem própria aqui no portal, na seção [Tecnologia](noticias.html?categoria=tecnologia)."
+        "## Feito para o laboratório",
+        "O sistema tem instalador próprio, que dispensa instalar o R ou ter acesso de administrador, funciona em português e em inglês, pede login individual e atualiza as telas sozinho quando outra pessoa grava um dado na rede.",
+        "O trabalho que apresenta o SEEDS [ficou em 3º lugar no IV SEAGRO](noticia.html?id=seeds-3o-lugar-seagro)."
       ]
     },
 
     {
       id: "banco-de-germoplasma-digital",
       titulo: "Banco de germoplasma ganha controle digital dos lotes de sementes",
-      linhaFina: "Nova aba do SEEDS registra o saldo de cada lote guardado na câmara fria e mostra em quais programas cada material está sendo usado.",
+      linhaFina: "Aba do SEEDS registra o saldo de cada lote guardado na câmara fria e mostra em quais programas cada material está sendo usado.",
       categoria: "germoplasma",
       data: "2026-08-11",
       autor: "Departamento de Germoplasma",
-      destaque: true,
+      destaque: false,
       imagem: "",
       legenda: "",
       tags: ["BAG", "sementes", "SEEDS"],
@@ -120,130 +266,8 @@ window.GEMS = {
         "Cada lote de sementes passa a ter registro próprio, com o saldo disponível. Assim, o Departamento de Germoplasma sabe o que está guardado antes de planejar semeaduras e cruzamentos, e o painel inicial do sistema avisa quando um lote chega a um nível crítico.",
         "## De onde vem, para onde vai",
         "A aba também mostra em quais programas cada material está sendo usado. Essa informação não é digitada por ninguém: o sistema a deduz dos cruzamentos em que o material entrou como genitor, das progênies que ele originou e dos ensaios em que foi avaliado. Por isso, ela nunca fica desatualizada.",
-        "> O uso de cada material não é digitado: o sistema o deduz dos cruzamentos, das progênies e dos ensaios.",
         "## Próximo passo: a balança",
         "A etapa seguinte é ligar a balança do laboratório direto ao sistema, para que o peso de cada lote seja lido sem digitação. A integração já foi construída e está em fase de testes."
-      ]
-    },
-
-    {
-      id: "ensaio-interprovi-2025",
-      titulo: "Ensaio Interprovi 2025: dados de nove genótipos de milho entram em análise",
-      linhaFina: "Experimento em blocos casualizados, com 27 parcelas, avaliou caracteres de planta, de espiga e a produção de grãos.",
-      categoria: "pesquisa",
-      data: "2026-08-18",
-      autor: "Redação GEMS",
-      destaque: true,
-      imagem: "",
-      legenda: "",
-      tags: ["milho", "ensaio", "análise de trilha"],
-      texto: [
-        "Os dados do ensaio Interprovi 2025 estão na fase de análise. O experimento avaliou **nove genótipos de milho** em delineamento de blocos casualizados, com três repetições: 27 parcelas no total.",
-        "Foram medidos caracteres de planta, como a altura da planta, a altura de inserção da espiga e as datas de florescimento, e caracteres ligados à produção, como diâmetro e comprimento da espiga, número de grãos por fileira e peso de grãos por parcela.",
-        "## Antes da estatística, a conferência",
-        "Antes de qualquer análise, a planilha passa por uma conferência cuidadosa. É nessa etapa que aparecem problemas comuns em dados de campo — valores digitados na coluna errada, colunas duplicadas, separadores de milhar confundidos com vírgula decimal — que, se passassem adiante, distorceriam os resultados.",
-        "## Correlações e análise de trilha",
-        "Com os dados conferidos, a equipe estima as correlações entre os caracteres e faz a **análise de trilha**, que desdobra essas correlações em efeitos diretos e indiretos sobre a produção de grãos.",
-        "> A pergunta é quais características ajudam a encontrar, de forma indireta, os genótipos mais produtivos.",
-        "Caracteres fáceis de medir e fortemente associados à produção podem apoiar a seleção nos próximos ciclos do programa."
-      ]
-    },
-
-    {
-      id: "sistema-de-escalas",
-      titulo: "Novo sistema de escalas torna visível o trabalho de todos os departamentos",
-      linhaFina: "Regulamento combina escala fixa de campo, eventos críticos e uma pontuação mensal de contribuição para os 11 membros do grupo.",
-      categoria: "grupo",
-      data: "2026-08-05",
-      autor: "Coordenação do GEMS",
-      destaque: false,
-      imagem: "",
-      legenda: "",
-      tags: ["organização", "escalas", "departamentos"],
-      texto: [
-        "O trabalho de campo é visível por natureza: todo mundo está lá, vendo. Já o trabalho de germoplasma, de tecnologia e de mídia acontece longe dos olhos. Para corrigir essa assimetria, o GEMS adotou um **Sistema de Escalas e Pontuação de Contribuição**, que já funciona dentro do SEEDS.",
-        "O sistema organiza a rotina dos 11 membros da graduação, distribuídos em quatro departamentos — Germoplasma, Campo, Mídia e Tecnologia — em três camadas.",
-        "## Três camadas",
-        "- **Eventos críticos**: polinização, semeadura, colheita, montagem de experimentos e avaliações em janela fenológica pedem a presença de todos. Não valem pontos, porque ali a presença é condição, não moeda.",
-        "- **Escala fixa de campo**: cada membro cumpre dois dias de campo por semana, escolhidos com o coordenador e fixos durante o mês. Trocas entre colegas são livres, desde que registradas.",
-        "- **Pontuação**: a meta é de 40 pontos por mês. Um dia de campo vale 4 pontos; atividades estruturantes, técnicas e de emergência completam a conta.",
-        "## Visível para ser justo",
-        "Atividades de germoplasma, mídia e tecnologia pontuam com um entregável anexado: uma planilha atualizada, uma foto do inventário da câmara fria, o link de um script. É esse registro que torna o trabalho visível. Atividades feitas em benefício de outro departamento recebem um bônus de 30%, para estimular a colaboração entre as equipes.",
-        "Os parâmetros são definidos e revistos coletivamente. Como diz o próprio regulamento:",
-        "> Um sistema imperfeito e aceito funciona melhor que um sistema ótimo e imposto."
-      ]
-    },
-
-    {
-      id: "seeds-bilingue",
-      titulo: "SEEDS passa a funcionar em português e em inglês",
-      linhaFina: "Um seletor na barra superior troca o idioma de toda a interface, inclusive o da tela de entrada.",
-      categoria: "tecnologia",
-      data: "2026-08-08",
-      autor: "Departamento de Tecnologia",
-      destaque: false,
-      imagem: "",
-      legenda: "",
-      tags: ["SEEDS", "idiomas"],
-      texto: [
-        "O SEEDS agora pode ser usado em português ou em inglês. Um seletor na barra superior troca o idioma de toda a interface: menus, tabelas, formulários e mensagens do sistema.",
-        "A tela de entrada também ganhou o seletor, para que ninguém precise passar pelo login em um idioma que não prefere.",
-        "A versão em inglês facilita apresentar o sistema a pesquisadores de outros países."
-      ]
-    },
-
-    {
-      id: "instalador-seeds",
-      titulo: "Instalador leva o SEEDS a qualquer computador do laboratório",
-      linhaFina: "Pacote único traz o R e todas as bibliotecas necessárias, funciona sem internet e dispensa acesso de administrador.",
-      categoria: "tecnologia",
-      data: "2026-08-12",
-      autor: "Departamento de Tecnologia",
-      destaque: false,
-      imagem: "",
-      legenda: "",
-      tags: ["SEEDS", "instalação"],
-      texto: [
-        "Instalar um aplicativo feito em R costumava exigir uma sequência de passos: instalar o R, instalar dezenas de pacotes, acertar as versões. O SEEDS agora tem um **instalador próprio**, que resolve tudo de uma vez.",
-        "O arquivo leva dentro dele o R e as cerca de 110 bibliotecas de que o sistema depende. Quem instala não precisa de internet, nem de R instalado, nem de senha de administrador — um detalhe importante em computadores de laboratório, onde os estudantes normalmente não têm esse acesso.",
-        "## Os dados ficam",
-        "Atualizar o sistema não apaga nada. O instalador foi feito para nunca sobrescrever o banco de dados de quem já usa o SEEDS: uma versão nova entra por cima da antiga, e todos os registros continuam lá."
-      ]
-    },
-
-    {
-      id: "login-seeds",
-      titulo: "Acesso ao SEEDS passa a exigir login individual",
-      linhaFina: "Senhas guardadas com criptografia, bloqueio após tentativas erradas e registro de acessos reforçam a segurança dos dados do programa.",
-      categoria: "tecnologia",
-      data: "2026-08-27",
-      autor: "Departamento de Tecnologia",
-      destaque: false,
-      imagem: "",
-      legenda: "",
-      tags: ["SEEDS", "segurança"],
-      texto: [
-        "Cada pessoa agora entra no SEEDS com usuário e senha próprios. A mudança acompanha o uso do sistema em rede: com mais gente acessando os mesmos dados, é preciso saber quem está trabalhando em cada conta.",
-        "As senhas são guardadas de forma criptografada, nunca em texto. Depois de cinco tentativas erradas em 15 minutos, a conta é bloqueada temporariamente. Os acessos ficam registrados, e o nome de quem está conectado aparece no botão de saída, na barra superior.",
-        "Contas criadas com a senha padrão precisam trocá-la logo no primeiro acesso."
-      ]
-    },
-
-    {
-      id: "telas-atualizam-sozinhas",
-      titulo: "Trabalho em equipe: telas do SEEDS se atualizam sozinhas",
-      linhaFina: "Quando alguém grava um dado, os outros computadores conectados veem a mudança em segundos, sem recarregar a página.",
-      categoria: "tecnologia",
-      data: "2026-08-29",
-      autor: "Departamento de Tecnologia",
-      destaque: false,
-      imagem: "",
-      legenda: "",
-      tags: ["SEEDS", "rede"],
-      texto: [
-        "Com o SEEDS aberto em vários computadores ao mesmo tempo, era comum uma pessoa não ver o que outra acabara de cadastrar. Isso mudou: as telas passam a se atualizar sozinhas quando alguém grava algo no sistema.",
-        "A verificação acontece a cada poucos segundos e é leve. O sistema observa o arquivo do banco de dados e só recarrega as tabelas quando algo realmente mudou.",
-        "Há um cuidado para não atrapalhar quem está no meio de uma edição: se a pessoa selecionou um registro para editar, a tabela espera a seleção ser solta antes de se atualizar."
       ]
     },
 
@@ -310,6 +334,29 @@ window.GEMS = {
         "## Onde entra o SEEDS",
         "Como as progênies selecionadas em um ciclo se tornam os genitores do próximo, o pedigree de cada material cresce a cada geração. O SEEDS registra essa cadeia, dos genitores originais às progênies mais recentes, e mantém a ordem dos ciclos de cada programa."
       ]
+    },
+
+    {
+      id: "ensaio-interprovi-2025",
+      titulo: "Ensaio Interprovi 2025: dados de nove genótipos de milho entram em análise",
+      linhaFina: "Experimento em blocos casualizados, com 27 parcelas, avaliou caracteres de planta, de espiga e a produção de grãos.",
+      categoria: "pesquisa",
+      data: "2026-08-18",
+      autor: "Redação GEMS",
+      destaque: false,
+      imagem: "",
+      legenda: "",
+      tags: ["milho", "ensaio", "análise de trilha"],
+      texto: [
+        "Os dados do ensaio Interprovi 2025 estão na fase de análise. O experimento avaliou **nove genótipos de milho** em delineamento de blocos casualizados, com três repetições: 27 parcelas no total.",
+        "Foram medidos caracteres de planta, como a altura da planta, a altura de inserção da espiga e as datas de florescimento, e caracteres ligados à produção, como diâmetro e comprimento da espiga, número de grãos por fileira e peso de grãos por parcela.",
+        "## Antes da estatística, a conferência",
+        "Antes de qualquer análise, a planilha passa por uma conferência cuidadosa. É nessa etapa que aparecem problemas comuns em dados de campo — valores digitados na coluna errada, colunas duplicadas, separadores de milhar confundidos com vírgula decimal — que, se passassem adiante, distorceriam os resultados.",
+        "## Correlações e análise de trilha",
+        "Com os dados conferidos, a equipe estima as correlações entre os caracteres e faz a **análise de trilha**, que desdobra essas correlações em efeitos diretos e indiretos sobre a produção de grãos.",
+        "> A pergunta é quais características ajudam a encontrar, de forma indireta, os genótipos mais produtivos.",
+        "Caracteres fáceis de medir e fortemente associados à produção podem apoiar a seleção nos próximos ciclos do programa."
+      ]
     }
 
   ],
@@ -318,32 +365,29 @@ window.GEMS = {
      LEITURAS ESSENCIAIS — lista da lateral. Use os "id" das notícias.
      --------------------------------------------------------------------- */
   essenciais: [
+    "nova-identidade-visual",
+    "primeira-tese-doutorado",
     "selecao-recorrente-explicada",
-    "sistema-de-escalas",
     "janela-de-polinizacao",
-    "banco-de-germoplasma-digital",
-    "ensaio-interprovi-2025"
+    "seeds-3-5"
   ],
 
   /* ---------------------------------------------------------------------
      AGENDA — itens com data já passada somem sozinhos.
      Sem data definida? Deixe data: "" e escreva em "quando" (ex.: "A confirmar").
-     ATENÇÃO: os itens abaixo são EXEMPLOS. Troque pelos compromissos reais.
      --------------------------------------------------------------------- */
   agenda: [
-    { data: "2026-09-30", quando: "", titulo: "Fechamento da pontuação de setembro", local: "Validação pelos coordenadores de departamento" },
-    { data: "2026-10-01", quando: "", titulo: "Publicação da escala de campo de outubro", local: "Mural do laboratório e planilha compartilhada" },
-    { data: "", quando: "A confirmar", titulo: "Janela de polinização", local: "Área experimental · convocação com 24 a 48 h de antecedência" }
+    { data: "2026-09-18", quando: "", titulo: "Dia de Campo GEMS", local: "Fazenda Experimental da UFS – Campus do Sertão, Pov. Mesinhas · 8h30 às 11h30" }
   ],
 
   /* ---------------------------------------------------------------------
      O GEMS EM NÚMEROS — faixa verde da página inicial
      --------------------------------------------------------------------- */
   numeros: [
-    { valor: "11", rotulo: "estudantes de graduação" },
-    { valor: "4",  rotulo: "departamentos" },
-    { valor: "9",  rotulo: "genótipos no ensaio Interprovi 2025" },
-    { valor: "14", rotulo: "módulos no SEEDS" }
+    { valor: "15", rotulo: "resumos científicos no IV SEAGRO" },
+    { valor: "3",  rotulo: "premiações em eventos científicos em 2026" },
+    { valor: "1ª", rotulo: "tese de doutorado defendida no grupo" },
+    { valor: "4",  rotulo: "departamentos" }
   ],
 
   /* ---------------------------------------------------------------------
@@ -367,7 +411,7 @@ window.GEMS = {
      --------------------------------------------------------------------- */
   seeds: {
     titulo: "O programa de melhoramento inteiro em um só lugar",
-    texto: "Sistema integrado de gestão de melhoramento vegetal, experimentos e rastreabilidade de materiais, desenvolvido pelo Departamento de Tecnologia do GEMS.",
+    texto: "Sistema integrado de gestão de melhoramento vegetal, experimentos e rastreabilidade de materiais, desenvolvido pelo Departamento de Tecnologia do GEMS e premiado no IV SEAGRO 2026.",
     recursos: [
       "Programas e ciclos de seleção",
       "Cruzamentos e progênies",
